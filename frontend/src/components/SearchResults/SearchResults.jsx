@@ -48,7 +48,7 @@ const SearchResults = () => {
                   src={
                     item.image.startsWith("http")
                       ? item.image
-                      : `${process.env.REACT_APP_BACKEND_URL}/images/${item.image}`
+                      : `http://localhost:4000/images/${item.image}`
                   }
                   alt={item.name}
                   className="search-result-img"
